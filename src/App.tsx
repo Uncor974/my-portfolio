@@ -1,15 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import Dashboard from "./pages/dashboard";
+import Charte from "./pages/charte";
 
 function App() {
   return (
     <Router>
-      <div className="flex flex-col items-center justify-center min-h-svh">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Routes>
+      <div className="flex h-screen flex-col px-40">
+        <div className="flex flex-col items-center justify-center">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/charte" element={<Charte />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
